@@ -4,19 +4,7 @@
   <title>Markdown Editor</title>
 </head>
 <body>
-    <div>
-      <p id="now"></p>
-      <button id="refresh">更新</button>
-    </div>
-    <script type="text/javascript">
-      window.onload = function () {
-        var refreshNow = function () {
-          document.getElementById('now').innerText = (new Date()).toISOString()
-        }
-        const refreshButton = document.getElementById('refresh')
-        refreshButton.onclick = refreshNow
-        refreshNow()
-      }
-    </script>
-  </body>
+  <div id="app"></div>
+  <script src="./dist/index.js"></script>
+</body>
 </html>
